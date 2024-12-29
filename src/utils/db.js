@@ -3,7 +3,7 @@ const {username,password}=process.env;
 export const connectionStr="mongodb+srv://"+username+":"+password+"@test-hackhthon.uu0ii.mongodb.net/collection?retryWrites=true&w=majority&appName=test-hackhthon"
 mongoose.connect(connectionStr)
 
-if (!db) {
+if (!connectionStr) {
   throw new Error('Please define the MONGODB_URI environment variable');
 }
 

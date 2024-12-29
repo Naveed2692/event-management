@@ -7,8 +7,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.page}>
+    <Link href="./auth/dashboard">Dashboard</Link>
      <Link href="/auth/signup">Signup</Link>
-     <signup/>
+    <Link href="./auth/login">Login</Link>
     </div>
   );
 };
